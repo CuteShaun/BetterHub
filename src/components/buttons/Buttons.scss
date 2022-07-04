@@ -1,0 +1,91 @@
+.button {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: content-box;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  width: 1em;
+  left: auto;
+  margin: auto;
+  min-width: 26px;
+  padding: 0 0.64em;
+  height: auto;
+  min-height: 1.8em;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-right: -3px;
+  background-position: 50% 50%;
+  color: white;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-size: 1.25em;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    .searchIcon,
+    .markIcon {
+      fill: #df4142;
+    }
+  }
+
+  &--search {
+    top: 0;
+    bottom: 3px;
+    right: 49px;
+
+
+    @media(max-width:500px) {
+      right: 28px;
+    }
+  }
+
+  &--close {
+    top: 0;
+    bottom: 3px;
+    right: 2px;
+
+    @media(max-width:500px) {
+      right: -20px;
+    }
+  }
+
+  .searchIcon,
+  .markIcon {
+    position: absolute;
+    fill: #dee1e6;
+    transition: 0.2s all;
+  }
+
+  .markIcon {
+    bottom: 10px;
+
+    @media(max-width:500px) {
+      width: 18px;
+      height: 18px;
+      right: 25px;
+    }
+  }
+
+  .searchIcon {
+    top: 9px;
+    right: 5px;
+
+    @media(max-width:500px) {
+      z-index: 2;
+      top: 17px;
+      right: 15px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

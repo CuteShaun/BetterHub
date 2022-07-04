@@ -1,0 +1,22 @@
+.header {
+    &__title {
+        text-align: center;
+      
+        &--red {
+          background-color: #df4142;
+          color: white;
+          border-radius: 10px;
+          padding: 6px;
+        }
+    }
+  
+    &__logo {
+      user-select: none;
+      cursor: pointer;
+    }
+  
+    &__box {
+      margin-top: 50px;
+    }
+  }
+  
