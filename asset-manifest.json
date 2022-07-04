@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/BetterHub/static/css/main.8d6a8782.css",
+    "main.js": "/BetterHub/static/js/main.d62175f5.js",
+    "static/media/mark.svg": "/BetterHub/static/media/mark.983937cd902bcc8c122fa2f9975bb398.svg",
+    "static/media/star.svg": "/BetterHub/static/media/star.c25d990690e61226dcd252bb6f64cec1.svg",
+    "index.html": "/BetterHub/index.html",
+    "static/media/search.svg": "/BetterHub/static/media/search.2c23ef58a4a56ac8e5f8bdfbb9f5516c.svg",
+    "main.8d6a8782.css.map": "/BetterHub/static/css/main.8d6a8782.css.map",
+    "main.d62175f5.js.map": "/BetterHub/static/js/main.d62175f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d6a8782.css",
+    "static/js/main.d62175f5.js"
+  ]
+}
