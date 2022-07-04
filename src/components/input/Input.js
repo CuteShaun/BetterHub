@@ -16,7 +16,6 @@ export const Input = ({ placeholder = "", fetchRepos = () => {} } = {}) => {
   return (
       <input
         className="text-input"
-        maxLength="10"
         placeholder={placeholder}
         type="text"
         value={query}
