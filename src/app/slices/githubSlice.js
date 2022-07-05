@@ -40,8 +40,9 @@ const githubSlice = createSlice({
   name: "github",
   initialState,
   reducers: {
-    update: (state, action) => {
-      state.data = action.payload;
+    resetRepos: (state) => {
+      state.data = [];
+      state.totalCount = 0
     },
     resetCurrentPage: (state) => {
       state.currentPage = 0;
@@ -64,5 +65,5 @@ const githubSlice = createSlice({
   },
 });
 
-export const { update, resetCurrentPage, updateCurrentPage } = githubSlice.actions;
+export const { resetRepos, resetCurrentPage, updateCurrentPage } = githubSlice.actions;
 export default githubSlice.reducer;

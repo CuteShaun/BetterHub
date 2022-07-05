@@ -9,11 +9,14 @@ const querySlice = createSlice({
   initialState,
 
   reducers: {
+    resetQuery: (state) => {
+      state.value = "";
+    },
     update: (state, action) => {
       state.value = action.payload;
     },
   },
 });
 
-export const { update } = querySlice.actions;
+export const { update, resetQuery } = querySlice.actions;
 export default querySlice.reducer;
