@@ -10,10 +10,11 @@ export const BetterHubCard = ({
   stars = "",
   license = "",
   lang = "",
-  topics = "",
+  topics = [],
   url = "",
-  issues = "",
+  issues = 0,
 } = {}) => {
+
   const renderCardTopics = () => {
     return topics.map((topic, index) => {
       return (
@@ -40,7 +41,8 @@ export const BetterHubCard = ({
         </a>
       </h2>
       <div className="card__description">{renderDescription()}</div>
-      <div className="card__topics">{renderCardTopics()}</div>
+
+      {topics.length > 0 && <div className="card__topics">{renderCardTopics()}</div>}
 
       <section className="card__footer">
         <a href={`${BASE_URL}/${title}/stargazers`} className="card__stars card__footer-item">
@@ -48,7 +50,7 @@ export const BetterHubCard = ({
           {stars}
         </a>
 
-        {lang && (
+        {lang !== null && (
           <div className="card__language card__footer-item">
             <span
               className="card__language-color"
@@ -58,9 +60,9 @@ export const BetterHubCard = ({
           </div>
         )}
 
-        {license && <div className="card__license card__footer-item">{license}</div>}
+        {license.length > 0 && <div className="card__license card__footer-item">{license}</div>}
 
-        {issues && (
+        {issues !== 0 && (
           <div className="card__issues card__footer-item">{`${issues} issues need help`}</div>
         )}
       </section>
